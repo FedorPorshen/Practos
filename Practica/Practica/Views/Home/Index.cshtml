@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Practica.Models.Player>
+@{
+    //ViewData["Title"] = "Список смартфонов";
+    Layout = null;
+}
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <title>Игроки в Doty 2</title>
+</head>
+<body>
+    <h3>Игроки в Doty 2</h3>
+    <table>
+        <tr>
+            <td>Nickname</td>
+            <td>Team</td>
+            <td>Rang</td>
+            <td>Video</td>
+        </tr>
+        @foreach (var player in Model)
+            {
+            <tr>
+                <td>@player.Name</td>
+                <td>@player.Team</td>
+                <td>@player.Rang</td>
+                <td><a href="~/Home/Video/@player.Id">Посмотреть</a></td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

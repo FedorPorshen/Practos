@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video</title>
+</head>
+<body>
+    <div>
+        <h3>Запись на тренировку с игроком</h3>
+        <p>Для записи к Alohadance заполните следующие поля:</p>
+        <form method="post">
+            <input type="hidden" value="@ViewBag.PlayerId" name="PlayerId" />
+            <table>
+                <tr>
+                    <td>Имя:</td>
+                    <td><input type="text" name="Name" /> </td>
+                </tr>
+                <tr>
+                    <td>Стим аккаунт:</td>
+                    <td><input type="text" name="Steam" /></td>
+                </tr>
+                <tr>
+                    <td>Номер карты:</td>
+                    <td><input type="text" name="Card" /></td>
+                </tr>
+                <tr>
+                    <td>3 цифры с обратной стороны карты:</td>
+                    <td><input type="text" name="Card2" /></td>
+                </tr>
+                <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+    <iframe style="display: block; margin: auto;" type="text/html" width="1280" height="720" src="https://www.youtube.com/embed/oqE56bMEFAY" frameborder="0"></iframe>
+</body>
+</html>
